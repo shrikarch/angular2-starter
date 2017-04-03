@@ -23,6 +23,31 @@ export class DatabindingComponent {
 //pulls these objects into HTML template.
 }
 ```
+>How do you know to which Properties or Events of HTML Elements you may bind?
+
+>"*The MDN (Mozilla Developer Network) offers nice lists of all properties and events of the element you're interested in. Googling for YOUR_ELEMENT properties  or YOUR_ELEMENT events  should yield nice results.*"
+
+##### Property Binding
+```ts
+//databinding.component.ts
+export class DatabindingComponent {
+  setDisable = false;
+  constructor(){
+    setTimeout(() => {
+      this.setDisable = true;
+    },2000) //sets true after 2secs.
+  }
+}
+```
+Using this, we can map a property of a DOM element like this:
+```html
+<button type="button" name="button" class="btn btn-warning" [disabled]="setDisable">Property Binding</button>
+```
+Where [disabled] tells angualr that it is a bound attribute.
+setting `[disabled]="!setDisable"` will do the opposite.
+We can set `innerText` property to manipulate content inside the tag.
+
+
 ##### Event Binding
 ```javascript
 //event-binding.Component.ts
@@ -40,6 +65,7 @@ export class EventBindingComponent {
 }
 ```
 The event needs to be in the bound button between `()`. Eg: `(click)`
+`<button (clicked)="onClicked($event)"></button>`
 
 ##### Custom event bindings
 ```javascript
@@ -101,3 +127,12 @@ export class EventBindingComponent {
 ```
 #### Two way data bindings
 The two way data binding can be achieved using `ngModel`.
+For example,
+```html
+<input type="text" [(ngModel)]="boundVariable">
+```
+For Two-Way-Binding to work, you need to enable the `ngModel`  directive. This is done by adding the FormsModule  to the imports[]  array in the AppModule.
+
+You then also need to add the import from @angular/forms  in the app.module.ts file:
+
+`import { FormsModule } from '@angular/forms'; `

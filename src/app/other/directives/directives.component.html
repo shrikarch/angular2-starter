@@ -1,0 +1,11 @@
+<p *ngIf="isvisible">
+  Server was created. Servername is {{serverName}}
+</p>
+<p>{{serverName}}</p>
+<input type="text" [(ngModel)]="serverName">
+
+<button class="btn btn-warning" (click)="onClicked()">Clicker</button>
+
+<p>This shows the <span [ngStyle]="{'color': getColor()}">ng-style</span></p>
+
+<span *ngFor="let server of servers">{{server}} <br></span>

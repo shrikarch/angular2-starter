@@ -1,3 +1,5 @@
+_Compiling these notes while learning from this amazing course on Udemy.com called [Angular 4 (formerly Angular 2) - The Complete Guide](https://www.udemy.com/the-complete-guide-to-angular-2/) by [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/)._
+
 ## Basics
 ##### How does `ng serve` server serves the webpages?
 Server fetches the index.html file. (duh) Index.html has component `<app-root>`. The app.component.tc file has a selector that targets `<app-root>` upon initialization. This is what it looks like:
@@ -32,6 +34,8 @@ String interpolation works as long as the content between the {{}} returns a str
 Only functions that return strings, variables(numbers included), or functions with return type as strings.
 ##### Constructor
 Function that is executed at the time when the Angular creates that particular component
+
+**In order to use the component, it is necessary that we add that component's selector to the app.component.ts markup**
 
 ---
 ## Working

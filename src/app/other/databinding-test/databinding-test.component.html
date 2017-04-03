@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h5>Databinding-test</h5>
+      <span class="label label-warning" style="padding-bottom:5px;">{{username}}</span> <br>
+      <input type="text" [(ngModel)]="username">
+      <button class="btn btn-primary" [disabled]=isDisabled() (click)="resetUsername()">Log In</button>
+
+      <span *ngFor="let server of servers">{{server}}</span>
+    </div>
+  </div>
+</div>

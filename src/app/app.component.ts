@@ -3,10 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <h1>
-    {{title}}
-  </h1>
-  <fa-databinding></fa-databinding>
+  <app-directives-hw></app-directives-hw>
 `,
   styleUrls: ['./app.component.css']
 })

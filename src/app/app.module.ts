@@ -10,6 +10,9 @@ import { DatabindingComponent } from './other/databinding/databinding.component'
 import { EventBindingComponent } from './other/databinding/event-binding.component';
 import { TwowaybindingComponent } from './other/databinding/twowaybinding.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { DatabindingTestComponent } from './other/databinding-test/databinding-test.component';
+import { DirectivesComponent } from './other/directives/directives.component';
+import { DirectivesHwComponent } from './other/directives/directives-hw/directives-hw.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     DatabindingComponent,
     EventBindingComponent,
     TwowaybindingComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    DatabindingTestComponent,
+    DirectivesComponent,
+    DirectivesHwComponent
   ],
   imports: [
     BrowserModule,
