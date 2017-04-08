@@ -40,7 +40,7 @@ To access the index of the items we're looping through, we need to add this:
 ```html
 <span *ngFor="let server of servers; let i = index">{{server}} {{i}} <br></span>
 ```
-Where i will print the index. We can use this to add classes etc to the printed elements.
+Where I will print the index. We can use this to add classes etc to the printed elements.
 
 ---
 ##### Attribute directives

@@ -1,5 +1,7 @@
 _Compiling these notes while learning from this amazing course on Udemy.com called [Angular 4 (formerly Angular 2) - The Complete Guide](https://www.udemy.com/the-complete-guide-to-angular-2/) by [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/)._
 
+The app that resulted from these basics can be found at: [https://github.com/shrikarch/ng2-recipe-app] (https://github.com/shrikarch/ng2-recipe-app)
+
 ## Basics
 ##### How does `ng serve` server serves the webpages?
 Server fetches the index.html file. (duh) Index.html has component `<app-root>`. The app.component.tc file has a selector that targets `<app-root>` upon initialization. This is what it looks like:
